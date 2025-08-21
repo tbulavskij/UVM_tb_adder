@@ -1,6 +1,6 @@
-class gen_item_seq extends uvm_sequence;
-  `uvm_object_utils(gen_item_seq)
-  function new(string name="gen_item_seq");
+class sequence1 extends uvm_sequence;
+  `uvm_object_utils(sequence1)
+  function new(string name="sequence1");
     super.new(name);
   endfunction
 
@@ -9,6 +9,8 @@ class gen_item_seq extends uvm_sequence;
   constraint c1 {item_num inside {[100:500]};}
 
   virtual task body();
+    `uvm_info("SEQ", $sformatf("Done generation of %0d items", item_num), UVM_LOW)
+
     for (int i = 0; i < item_num; i++) begin
     	item m_item = item::type_id::create("m_item");
     	start_item(m_item);

@@ -4,32 +4,35 @@ class monitor extends uvm_monitor;
     super.new(name, parent);
   endfunction
 
-  uvm_analysis_port  #(item) mon_analysis_port;
+  uvm_analysis_port  #(item) mon_analysis_port_in;
+  uvm_analysis_port  #(item) mon_analysis_port_out;
   virtual adder_if vif;
 
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     if (!uvm_config_db#(virtual adder_if)::get(this, "", "adder_vif", vif))
       `uvm_fatal("MON", "Could not get vif")
-      mon_analysis_port = new("mon_analysis_port", this);
+      mon_analysis_port_in = new("mon_analysis_port_in", this);
+      mon_analysis_port_out = new("mon_analysis_port_out", this);
   endfunction
 
   virtual task run_phase(uvm_phase phase);
-    int prev_in1;
-    int prev_in2;
     super.run_phase(phase);
     forever begin
-      #1;
-      if ((vif.sum_in1 != prev_in1) || (vif.sum_in2 != prev_in2)) begin
+      @(posedge vif.clk)
+      if (vif.sum_in_en) begin
         item m_item = item::type_id::create("m_item");
-        prev_in1 = vif.sum_in1;
-        prev_in2 = vif.sum_in2;
-        m_item.in1 = vif.sum_in1;
-        m_item.in2 = vif.sum_in2;
-        m_item.out = vif.sum_out;
+        m_item.sum_in1 = vif.sum_in1;
+        m_item.sum_in2 = vif.sum_in2;
+        mon_analysis_port_in.write(m_item);
+        //`uvm_info("MON",$sformatf("Detected xact\n%s", m_item.convert2string()), UVM_LOW);
+      end
+      if (vif.sum_out_en && vif.arst) begin
+        item m_item = item::type_id::create("m_item");
+        m_item.sum_out = vif.sum_out;
         m_item.carry_bit_out = vif.carry_bit_out;
-        `uvm_info("MOV",$sformatf("Detected xact\n%s", m_item.convert2string()), UVM_LOW);
-        mon_analysis_port.write(m_item);
+        mon_analysis_port_out.write(m_item);
+        //`uvm_info("MON",$sformatf("Detected xact\n%s", m_item.convert2string()), UVM_LOW);
       end
 	end
   endtask

@@ -18,16 +18,23 @@ class driver extends uvm_driver #(item);
     super.run_phase(phase);
     forever begin
       item m_item;
+      #1;
       seq_item_port.get_next_item(m_item);
       drive_item(m_item);
-      #1
-      `uvm_info("DRV",$sformatf("Generated xact\n%s", m_item.convert2string()), UVM_LOW);
       seq_item_port.item_done();
     end
   endtask
 
   virtual task drive_item(item m_item);
-    vif.sum_in1 <= m_item.in1;
-    vif.sum_in2 <= m_item.in2;
+      @(posedge vif.clk)
+      if (vif.sum_in_en) begin
+        vif.sum_in_en <= 0;
+      end
+      for (int i = 0; i < m_item.xact_delay;i++) begin
+        @(posedge vif.clk);
+      end
+      vif.sum_in1   <= m_item.sum_in1;
+      vif.sum_in2   <= m_item.sum_in2;
+      vif.sum_in_en <= 1; 
   endtask
 endclass
