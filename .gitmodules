@@ -1,0 +1,3 @@
+[submodule "DUT"]
+	path = DUT
+	url = https://github.com/tbulavskij/sum.git
