@@ -4,13 +4,17 @@ class sequence1 extends uvm_sequence;
     super.new(name);
   endfunction
 
-  rand int item_num; 	
+  rand int item_num ;
   
   constraint c1 {item_num inside {[100:500]};}
 
   virtual task body();
-    `uvm_info("SEQ", $sformatf("Done generation of %0d items", item_num), UVM_LOW)
-
+    if ($value$plusargs("ITEM_NUM=%d", item_num)) begin
+      `uvm_info("SEQ", $sformatf("Start generation of %0d items(plusarg)", item_num), UVM_LOW)
+    end
+    else begin
+      `uvm_info("SEQ", $sformatf("Start generation of %0d items (constraint)", item_num), UVM_LOW)
+    end
     for (int i = 0; i < item_num; i++) begin
     	item m_item = item::type_id::create("m_item");
     	start_item(m_item);
