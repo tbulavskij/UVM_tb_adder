@@ -11,7 +11,7 @@ class item extends uvm_sequence_item;
   endfunction
 
   constraint item_c{
-    xact_delay     dist {0:=20, [1:10]:/80};
+    xact_delay     dist {0:=20, [1:5]:/80};
   }
 
   virtual function string convert2string();

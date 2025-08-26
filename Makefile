@@ -12,7 +12,7 @@ run:
 	vsim build.tb_top -c -do "run -all; exit;" +UVM_TESTNAME=adder_test +ITEM_NUM=500
 
 gui:
-	vsim build.tb_top -do "add wave -position insertpoint vsim:/tb_top/_if/*;" +UVM_TESTNAME=adder_test +ITEM_NUM=500
+	vsim build.tb_top -do "add wave -position insertpoint sim:/tb_top/_if/*;" +UVM_TESTNAME=adder_test +ITEM_NUM=500
 
 clean:
 	rm -rf $(build)

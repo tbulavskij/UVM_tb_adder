@@ -11,8 +11,8 @@ class item_rst extends uvm_sequence_item;
   endfunction
 
   constraint item_c{
-    arst_delay      inside {[50: 100]};
-    arst_duration   inside {[0: 50]};
+    arst_delay      inside {[80: 100]};
+    arst_duration   inside {[1: 50]};
   }
 
   virtual function string convert2string();
