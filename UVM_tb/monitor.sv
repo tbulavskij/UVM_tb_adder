@@ -8,6 +8,8 @@ class monitor extends uvm_monitor;
   uvm_analysis_port  #(item) mon_analysis_port_out;
   virtual adder_if vif;
 
+  int xact_counter = 0;
+
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     if (!uvm_config_db#(virtual adder_if)::get(this, "", "adder_vif", vif))
@@ -24,15 +26,19 @@ class monitor extends uvm_monitor;
         item m_item = item::type_id::create("m_item");
         m_item.sum_in1 = vif.sum_in1;
         m_item.sum_in2 = vif.sum_in2;
+        xact_counter++;
+        m_item.xact_num = xact_counter;
         mon_analysis_port_in.write(m_item);
-        //`uvm_info("MON",$sformatf("Detected xact\n%s", m_item.convert2string()), UVM_LOW);
+      end
+      else if (vif.sum_in_en && !vif.arst) begin
+        xact_counter++;
+        `uvm_info("MON",$sformatf("Reset xact        # %d", xact_counter), UVM_LOW);
       end
       if (vif.sum_out_en) begin
         item m_item = item::type_id::create("m_item");
         m_item.sum_out = vif.sum_out;
         m_item.carry_bit_out = vif.carry_bit_out;
         mon_analysis_port_out.write(m_item);
-        //`uvm_info("MON",$sformatf("Detected xact\n%s", m_item.convert2string()), UVM_LOW);
       end
 	end
   endtask

@@ -22,14 +22,14 @@ class scoreboard extends uvm_scoreboard;
   endfunction
 
   virtual function void write_port_main_in(item m_item);
-  //`uvm_info("SB(in)",$sformatf("Received xact\n%s", m_item.convert2string()), UVM_LOW);
     item_queue.push_back(m_item);
   endfunction
 
   virtual function void write_port_main_out(item m_item);
-  //`uvm_info("SB(out)",$sformatf("Received xact\n%s", m_item.convert2string()), UVM_LOW);
+
     m_item.sum_in1 = item_queue[0].sum_in1;
     m_item.sum_in2 = item_queue[0].sum_in2;
+    m_item.xact_num = item_queue[0].xact_num;
 
     if (m_item.sum_out != m_item.sum_in1 + m_item.sum_in2) begin
       `uvm_fatal("SB", $sformatf("Result is incorrect\n%s", m_item.convert2string()));
@@ -37,12 +37,15 @@ class scoreboard extends uvm_scoreboard;
     if ((2 ** 32 - m_item.sum_in1 < m_item.sum_in2) && m_item.carry_bit_out != 1 ) begin
       `uvm_fatal("SB", $sformatf("Carrybit is incorrect\n%s", m_item.convert2string()));
     end
+    `uvm_info("SB(out)",$sformatf("Received xact #%d", m_item.xact_num), UVM_LOW);
     item_queue.pop_front();
   endfunction
 
   virtual function void write_port_rst(item_rst m_item);
-    //`uvm_info("SB(rst)",$sformatf("Received xact\n%s", m_item.convert2string()), UVM_LOW);
-    item_queue.pop_front();
+    if (item_queue.size() > 0) begin
+      `uvm_info("SB(rst)",$sformatf("Resetted xact #%d", item_queue[0].xact_num), UVM_LOW);
+      item_queue.pop_front();
+    end;
   endfunction
 
 endclass

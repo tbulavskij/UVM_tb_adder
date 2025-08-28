@@ -5,6 +5,7 @@ class item extends uvm_sequence_item;
     logic      [BUS_WIDTH - 1:0] sum_out;
     logic                        carry_bit_out;
     rand int                     xact_delay;
+    int                          xact_num;
 
   function new(string name = "item");
     super.new(name);
