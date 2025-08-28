@@ -8,7 +8,7 @@ class sequence_rst extends uvm_sequence;
     while (1) begin
       item_rst m_item = item_rst::type_id::create("m_item");
       start_item(m_item);
-      m_item.randomize();
+      void'(m_item.randomize());
       finish_item(m_item);
     end
   endtask

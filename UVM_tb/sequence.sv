@@ -18,7 +18,7 @@ class sequence1 extends uvm_sequence;
     for (int i = 0; i < item_num; i++) begin
     	item m_item = item::type_id::create("m_item");
     	start_item(m_item);
-    	m_item.randomize();
+    	void'(m_item.randomize());
       finish_item(m_item);
     end
     `uvm_info("SEQ", $sformatf("Done generation of %0d items", item_num), UVM_LOW)

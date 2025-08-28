@@ -38,13 +38,13 @@ class scoreboard extends uvm_scoreboard;
       `uvm_fatal("SB", $sformatf("Carrybit is incorrect\n%s", m_item.convert2string()));
     end
     `uvm_info("SB(out)",$sformatf("Received xact #%d", m_item.xact_num), UVM_LOW);
-    item_queue.pop_front();
+    void'(item_queue.pop_front());
   endfunction
 
   virtual function void write_port_rst(item_rst m_item);
     if (item_queue.size() > 0) begin
       `uvm_info("SB(rst)",$sformatf("Resetted xact #%d", item_queue[0].xact_num), UVM_LOW);
-      item_queue.pop_front();
+      void'(item_queue.pop_front());
     end;
   endfunction
 
