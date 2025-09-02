@@ -1,0 +1,4 @@
+build/
+*.vstf
+*.wstf
+transcript
