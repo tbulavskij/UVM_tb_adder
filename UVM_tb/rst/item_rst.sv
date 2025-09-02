@@ -1,7 +1,7 @@
 class item_rst extends uvm_sequence_item;
   `uvm_object_utils(item_rst)
 
-    bit      arst;
+    bit      arst_val;
 
     rand int arst_delay;
     rand int arst_duration;

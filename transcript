@@ -1,0 +1,570 @@
+# vsim build.tb_top -c -do "run -all; exit;" "+UVM_TESTNAME=adder_test" "+ITEM_NUM=500" 
+# Start time: 23:00:02 on Sep 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.adder_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.adder_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /home/user/questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test adder_test...
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/sequence.sv(13) @ 0: uvm_test_top.e0.a0.s0@@seq [SEQ] Start generation of 500 items(plusarg)
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 102: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #          1
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 212: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #          2
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 310: uvm_test_top.e0.sb0 [SB(out)] Received xact #          3
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 410: uvm_test_top.e0.sb0 [SB(out)] Received xact #          4
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 510: uvm_test_top.e0.sb0 [SB(out)] Received xact #          5
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 590: uvm_test_top.e0.sb0 [SB(out)] Received xact #          6
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 710: uvm_test_top.e0.sb0 [SB(out)] Received xact #          7
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 750: uvm_test_top.e0.sb0 [SB(out)] Received xact #          8
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 830: uvm_test_top.e0.sb0 [SB(out)] Received xact #          9
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 950: uvm_test_top.e0.sb0 [SB(out)] Received xact #         10
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 1030: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          11
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 1050: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          12
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1090: uvm_test_top.e0.sb0 [SB(out)] Received xact #         13
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1190: uvm_test_top.e0.sb0 [SB(out)] Received xact #         14
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 1270: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          15
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1330: uvm_test_top.e0.sb0 [SB(out)] Received xact #         16
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1370: uvm_test_top.e0.sb0 [SB(out)] Received xact #         17
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1450: uvm_test_top.e0.sb0 [SB(out)] Received xact #         18
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1470: uvm_test_top.e0.sb0 [SB(out)] Received xact #         19
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 1493: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         20
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 1510: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          21
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1590: uvm_test_top.e0.sb0 [SB(out)] Received xact #         22
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1610: uvm_test_top.e0.sb0 [SB(out)] Received xact #         23
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 1641: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         24
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 1751: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         25
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 1830: uvm_test_top.e0.sb0 [SB(out)] Received xact #         26
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 1899: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         27
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2030: uvm_test_top.e0.sb0 [SB(out)] Received xact #         28
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 2031: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         29
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2170: uvm_test_top.e0.sb0 [SB(out)] Received xact #         30
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 2237: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         31
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2310: uvm_test_top.e0.sb0 [SB(out)] Received xact #         32
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2390: uvm_test_top.e0.sb0 [SB(out)] Received xact #         33
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2430: uvm_test_top.e0.sb0 [SB(out)] Received xact #         34
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 2463: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         35
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 2470: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          36
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2550: uvm_test_top.e0.sb0 [SB(out)] Received xact #         37
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2610: uvm_test_top.e0.sb0 [SB(out)] Received xact #         38
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 2611: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         39
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2730: uvm_test_top.e0.sb0 [SB(out)] Received xact #         40
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2790: uvm_test_top.e0.sb0 [SB(out)] Received xact #         41
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2830: uvm_test_top.e0.sb0 [SB(out)] Received xact #         42
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 2850: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          43
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 2950: uvm_test_top.e0.sb0 [SB(out)] Received xact #         44
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3010: uvm_test_top.e0.sb0 [SB(out)] Received xact #         45
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 3070: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          46
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3110: uvm_test_top.e0.sb0 [SB(out)] Received xact #         47
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 3190: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          48
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3270: uvm_test_top.e0.sb0 [SB(out)] Received xact #         49
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 3308: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         50
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 3330: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          51
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3430: uvm_test_top.e0.sb0 [SB(out)] Received xact #         52
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 3435: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         53
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 3470: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          54
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3530: uvm_test_top.e0.sb0 [SB(out)] Received xact #         55
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3550: uvm_test_top.e0.sb0 [SB(out)] Received xact #         56
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3670: uvm_test_top.e0.sb0 [SB(out)] Received xact #         57
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3690: uvm_test_top.e0.sb0 [SB(out)] Received xact #         58
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3710: uvm_test_top.e0.sb0 [SB(out)] Received xact #         59
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3730: uvm_test_top.e0.sb0 [SB(out)] Received xact #         60
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3770: uvm_test_top.e0.sb0 [SB(out)] Received xact #         61
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3790: uvm_test_top.e0.sb0 [SB(out)] Received xact #         62
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3850: uvm_test_top.e0.sb0 [SB(out)] Received xact #         63
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 3930: uvm_test_top.e0.sb0 [SB(out)] Received xact #         64
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4050: uvm_test_top.e0.sb0 [SB(out)] Received xact #         65
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4070: uvm_test_top.e0.sb0 [SB(out)] Received xact #         66
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 4109: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         67
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4190: uvm_test_top.e0.sb0 [SB(out)] Received xact #         68
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4310: uvm_test_top.e0.sb0 [SB(out)] Received xact #         69
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 4370: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          70
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4450: uvm_test_top.e0.sb0 [SB(out)] Received xact #         71
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4550: uvm_test_top.e0.sb0 [SB(out)] Received xact #         72
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4650: uvm_test_top.e0.sb0 [SB(out)] Received xact #         73
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 4710: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          74
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4770: uvm_test_top.e0.sb0 [SB(out)] Received xact #         75
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 4890: uvm_test_top.e0.sb0 [SB(out)] Received xact #         76
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5010: uvm_test_top.e0.sb0 [SB(out)] Received xact #         77
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 5043: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         78
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5090: uvm_test_top.e0.sb0 [SB(out)] Received xact #         79
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 5151: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         80
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5210: uvm_test_top.e0.sb0 [SB(out)] Received xact #         81
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 5239: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #         82
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 5250: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          83
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 5270: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          84
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 5370: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          85
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5450: uvm_test_top.e0.sb0 [SB(out)] Received xact #         86
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5470: uvm_test_top.e0.sb0 [SB(out)] Received xact #         87
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5510: uvm_test_top.e0.sb0 [SB(out)] Received xact #         88
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5550: uvm_test_top.e0.sb0 [SB(out)] Received xact #         89
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 5590: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          90
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5710: uvm_test_top.e0.sb0 [SB(out)] Received xact #         91
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5790: uvm_test_top.e0.sb0 [SB(out)] Received xact #         92
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5870: uvm_test_top.e0.sb0 [SB(out)] Received xact #         93
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 5970: uvm_test_top.e0.sb0 [SB(out)] Received xact #         94
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6010: uvm_test_top.e0.sb0 [SB(out)] Received xact #         95
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6110: uvm_test_top.e0.sb0 [SB(out)] Received xact #         96
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6130: uvm_test_top.e0.sb0 [SB(out)] Received xact #         97
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 6150: uvm_test_top.e0.a0.m0 [MON] Reset xact        #          98
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6190: uvm_test_top.e0.sb0 [SB(out)] Received xact #         99
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6210: uvm_test_top.e0.sb0 [SB(out)] Received xact #        100
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6330: uvm_test_top.e0.sb0 [SB(out)] Received xact #        101
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 6450: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        102
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 6470: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         103
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        104
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6590: uvm_test_top.e0.sb0 [SB(out)] Received xact #        105
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6710: uvm_test_top.e0.sb0 [SB(out)] Received xact #        106
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 6790: uvm_test_top.e0.sb0 [SB(out)] Received xact #        107
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 6826: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        108
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 6940: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        109
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 7056: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        110
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 7155: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        111
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7210: uvm_test_top.e0.sb0 [SB(out)] Received xact #        112
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7230: uvm_test_top.e0.sb0 [SB(out)] Received xact #        113
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7330: uvm_test_top.e0.sb0 [SB(out)] Received xact #        114
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7450: uvm_test_top.e0.sb0 [SB(out)] Received xact #        115
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        116
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        117
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7570: uvm_test_top.e0.sb0 [SB(out)] Received xact #        118
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 7630: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         119
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7670: uvm_test_top.e0.sb0 [SB(out)] Received xact #        120
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 7728: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        121
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        122
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7830: uvm_test_top.e0.sb0 [SB(out)] Received xact #        123
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 7930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        124
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 7990: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         125
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8030: uvm_test_top.e0.sb0 [SB(out)] Received xact #        126
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        127
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 8097: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        128
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 8198: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        129
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8250: uvm_test_top.e0.sb0 [SB(out)] Received xact #        130
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8270: uvm_test_top.e0.sb0 [SB(out)] Received xact #        131
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 8310: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         132
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        133
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 8430: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         134
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 8530: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         135
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 8664: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        136
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 8690: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         137
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        138
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8750: uvm_test_top.e0.sb0 [SB(out)] Received xact #        139
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8850: uvm_test_top.e0.sb0 [SB(out)] Received xact #        140
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8890: uvm_test_top.e0.sb0 [SB(out)] Received xact #        141
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 8990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        142
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        143
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        144
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        145
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        146
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        147
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9470: uvm_test_top.e0.sb0 [SB(out)] Received xact #        148
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        149
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9630: uvm_test_top.e0.sb0 [SB(out)] Received xact #        150
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        151
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9790: uvm_test_top.e0.sb0 [SB(out)] Received xact #        152
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 9830: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         153
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9890: uvm_test_top.e0.sb0 [SB(out)] Received xact #        154
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 9910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        155
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10010: uvm_test_top.e0.sb0 [SB(out)] Received xact #        156
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10110: uvm_test_top.e0.sb0 [SB(out)] Received xact #        157
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 10154: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        158
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 10261: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        159
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        160
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        161
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        162
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        163
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 10630: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         164
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 10733: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        165
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 10750: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         166
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 10863: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        167
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 10950: uvm_test_top.e0.sb0 [SB(out)] Received xact #        168
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 11009: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        169
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        170
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        171
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 11250: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         172
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11290: uvm_test_top.e0.sb0 [SB(out)] Received xact #        173
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        174
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        175
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 11470: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         176
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        177
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 11578: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        178
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        179
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 11710: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         180
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11790: uvm_test_top.e0.sb0 [SB(out)] Received xact #        181
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        182
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        183
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 11990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        184
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12030: uvm_test_top.e0.sb0 [SB(out)] Received xact #        185
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 12050: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         186
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12170: uvm_test_top.e0.sb0 [SB(out)] Received xact #        187
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12270: uvm_test_top.e0.sb0 [SB(out)] Received xact #        188
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        189
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 12422: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        190
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        191
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12590: uvm_test_top.e0.sb0 [SB(out)] Received xact #        192
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 12610: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         193
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 12730: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         194
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 12790: uvm_test_top.e0.sb0 [SB(out)] Received xact #        195
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 12842: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        196
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 12966: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        197
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        198
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        199
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 13214: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        200
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        201
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        202
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 13355: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        203
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13390: uvm_test_top.e0.sb0 [SB(out)] Received xact #        204
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 13470: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        205
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13570: uvm_test_top.e0.sb0 [SB(out)] Received xact #        206
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13670: uvm_test_top.e0.sb0 [SB(out)] Received xact #        207
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 13710: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         208
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13770: uvm_test_top.e0.sb0 [SB(out)] Received xact #        209
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13870: uvm_test_top.e0.sb0 [SB(out)] Received xact #        210
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 13917: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        211
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 13990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        212
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        213
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 14130: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         214
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14230: uvm_test_top.e0.sb0 [SB(out)] Received xact #        215
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14330: uvm_test_top.e0.sb0 [SB(out)] Received xact #        216
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 14364: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        217
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 14472: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        218
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        219
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14670: uvm_test_top.e0.sb0 [SB(out)] Received xact #        220
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14710: uvm_test_top.e0.sb0 [SB(out)] Received xact #        221
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 14770: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         222
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 14910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        223
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 14958: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        224
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 14970: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         225
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        226
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        227
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 15190: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         228
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 15292: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        229
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        230
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15470: uvm_test_top.e0.sb0 [SB(out)] Received xact #        231
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        232
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 15521: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        233
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15630: uvm_test_top.e0.sb0 [SB(out)] Received xact #        234
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        235
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        236
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 15753: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        237
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 15830: uvm_test_top.e0.sb0 [SB(out)] Received xact #        238
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 15874: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        239
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 16001: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        240
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 16010: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         241
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16050: uvm_test_top.e0.sb0 [SB(out)] Received xact #        242
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        243
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 16123: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        244
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 16226: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        245
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        246
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        247
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16510: uvm_test_top.e0.sb0 [SB(out)] Received xact #        248
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        249
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16630: uvm_test_top.e0.sb0 [SB(out)] Received xact #        250
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16750: uvm_test_top.e0.sb0 [SB(out)] Received xact #        251
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 16790: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         252
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16870: uvm_test_top.e0.sb0 [SB(out)] Received xact #        253
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 16950: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         254
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 16990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        255
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        256
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17210: uvm_test_top.e0.sb0 [SB(out)] Received xact #        257
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17250: uvm_test_top.e0.sb0 [SB(out)] Received xact #        258
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        259
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 17410: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         260
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 17510: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        261
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17610: uvm_test_top.e0.sb0 [SB(out)] Received xact #        262
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        263
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 17790: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         264
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17870: uvm_test_top.e0.sb0 [SB(out)] Received xact #        265
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 17950: uvm_test_top.e0.sb0 [SB(out)] Received xact #        266
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18050: uvm_test_top.e0.sb0 [SB(out)] Received xact #        267
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18170: uvm_test_top.e0.sb0 [SB(out)] Received xact #        268
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        269
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 18205: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        270
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18290: uvm_test_top.e0.sb0 [SB(out)] Received xact #        271
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        272
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 18330: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         273
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 18419: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        274
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        275
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18610: uvm_test_top.e0.sb0 [SB(out)] Received xact #        276
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18630: uvm_test_top.e0.sb0 [SB(out)] Received xact #        277
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        278
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18750: uvm_test_top.e0.sb0 [SB(out)] Received xact #        279
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 18790: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        280
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18850: uvm_test_top.e0.sb0 [SB(out)] Received xact #        281
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        282
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 18930: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         283
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 18970: uvm_test_top.e0.sb0 [SB(out)] Received xact #        284
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        285
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 19170: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         286
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19230: uvm_test_top.e0.sb0 [SB(out)] Received xact #        287
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        288
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        289
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        290
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        291
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 19550: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         292
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 19669: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        293
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        294
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 19790: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         295
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19870: uvm_test_top.e0.sb0 [SB(out)] Received xact #        296
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 19990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        297
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 20043: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        298
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20130: uvm_test_top.e0.sb0 [SB(out)] Received xact #        299
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20230: uvm_test_top.e0.sb0 [SB(out)] Received xact #        300
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 20290: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         301
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        302
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        303
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20510: uvm_test_top.e0.sb0 [SB(out)] Received xact #        304
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 20550: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         305
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20590: uvm_test_top.e0.sb0 [SB(out)] Received xact #        306
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 20650: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         307
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 20770: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         308
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 20890: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         309
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        310
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 20950: uvm_test_top.e0.sb0 [SB(out)] Received xact #        311
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        312
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        313
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 21230: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         314
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 21326: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        315
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        316
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        317
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 21423: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        318
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        319
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21570: uvm_test_top.e0.sb0 [SB(out)] Received xact #        320
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        321
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        322
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21830: uvm_test_top.e0.sb0 [SB(out)] Received xact #        323
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21850: uvm_test_top.e0.sb0 [SB(out)] Received xact #        324
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 21882: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        325
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 21910: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         326
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21950: uvm_test_top.e0.sb0 [SB(out)] Received xact #        327
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 21990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        328
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22030: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         329
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 22126: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        330
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22130: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         331
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22230: uvm_test_top.e0.sb0 [SB(out)] Received xact #        332
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22250: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         333
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        334
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22330: uvm_test_top.e0.sb0 [SB(out)] Received xact #        335
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22450: uvm_test_top.e0.sb0 [SB(out)] Received xact #        336
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        337
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22510: uvm_test_top.e0.sb0 [SB(out)] Received xact #        338
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        339
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22570: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         340
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22650: uvm_test_top.e0.sb0 [SB(out)] Received xact #        341
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 22679: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        342
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22770: uvm_test_top.e0.sb0 [SB(out)] Received xact #        343
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 22810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        344
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22830: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         345
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22950: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         346
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 22970: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         347
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23010: uvm_test_top.e0.sb0 [SB(out)] Received xact #        348
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        349
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        350
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23210: uvm_test_top.e0.sb0 [SB(out)] Received xact #        351
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 23250: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         352
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 23362: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        353
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23430: uvm_test_top.e0.sb0 [SB(out)] Received xact #        354
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        355
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 23630: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         356
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23710: uvm_test_top.e0.sb0 [SB(out)] Received xact #        357
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23730: uvm_test_top.e0.sb0 [SB(out)] Received xact #        358
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        359
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23830: uvm_test_top.e0.sb0 [SB(out)] Received xact #        360
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        361
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 23990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        362
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24070: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         363
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24190: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         364
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 24286: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        365
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        366
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24390: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         367
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24430: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         368
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24510: uvm_test_top.e0.sb0 [SB(out)] Received xact #        369
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24550: uvm_test_top.e0.sb0 [SB(out)] Received xact #        370
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 24617: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        371
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24650: uvm_test_top.e0.sb0 [SB(out)] Received xact #        372
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        373
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        374
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 24910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        375
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24970: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         376
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 24990: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         377
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        378
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        379
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 25215: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        380
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 25338: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        381
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        382
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 25435: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        383
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        384
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25630: uvm_test_top.e0.sb0 [SB(out)] Received xact #        385
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25650: uvm_test_top.e0.sb0 [SB(out)] Received xact #        386
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 25704: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        387
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 25823: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        388
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 25930: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         389
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 25990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        390
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        391
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 26190: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         392
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26330: uvm_test_top.e0.sb0 [SB(out)] Received xact #        393
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 26430: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         394
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        395
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 26544: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        396
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26670: uvm_test_top.e0.sb0 [SB(out)] Received xact #        397
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26750: uvm_test_top.e0.sb0 [SB(out)] Received xact #        398
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 26790: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         399
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 26888: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        400
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 26930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        401
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 27002: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        402
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 27050: uvm_test_top.e0.sb0 [SB(out)] Received xact #        403
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 27108: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        404
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 27130: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         405
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 27190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        406
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 27250: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         407
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 27390: uvm_test_top.e0.sb0 [SB(out)] Received xact #        408
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 27490: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         409
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 27610: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         410
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 27725: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        411
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 27810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        412
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 27910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        413
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 27965: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        414
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        415
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        416
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 28230: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         417
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28290: uvm_test_top.e0.sb0 [SB(out)] Received xact #        418
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        419
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28390: uvm_test_top.e0.sb0 [SB(out)] Received xact #        420
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 28421: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        421
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 28450: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         422
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 28561: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        423
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28650: uvm_test_top.e0.sb0 [SB(out)] Received xact #        424
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28770: uvm_test_top.e0.sb0 [SB(out)] Received xact #        425
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 28870: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         426
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28910: uvm_test_top.e0.sb0 [SB(out)] Received xact #        427
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 28930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        428
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29010: uvm_test_top.e0.sb0 [SB(out)] Received xact #        429
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29130: uvm_test_top.e0.sb0 [SB(out)] Received xact #        430
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        431
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 29190: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         432
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 29310: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         433
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29350: uvm_test_top.e0.sb0 [SB(out)] Received xact #        434
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29370: uvm_test_top.e0.sb0 [SB(out)] Received xact #        435
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29390: uvm_test_top.e0.sb0 [SB(out)] Received xact #        436
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        437
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        438
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29590: uvm_test_top.e0.sb0 [SB(out)] Received xact #        439
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29710: uvm_test_top.e0.sb0 [SB(out)] Received xact #        440
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 29770: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         441
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29850: uvm_test_top.e0.sb0 [SB(out)] Received xact #        442
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29950: uvm_test_top.e0.sb0 [SB(out)] Received xact #        443
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29970: uvm_test_top.e0.sb0 [SB(out)] Received xact #        444
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 29990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        445
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30010: uvm_test_top.e0.sb0 [SB(out)] Received xact #        446
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        447
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30170: uvm_test_top.e0.sb0 [SB(out)] Received xact #        448
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 30230: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         449
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30290: uvm_test_top.e0.sb0 [SB(out)] Received xact #        450
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30310: uvm_test_top.e0.sb0 [SB(out)] Received xact #        451
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        452
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30430: uvm_test_top.e0.sb0 [SB(out)] Received xact #        453
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 30432: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        454
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30490: uvm_test_top.e0.sb0 [SB(out)] Received xact #        455
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30530: uvm_test_top.e0.sb0 [SB(out)] Received xact #        456
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 30558: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        457
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        458
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30790: uvm_test_top.e0.sb0 [SB(out)] Received xact #        459
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 30810: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         460
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30890: uvm_test_top.e0.sb0 [SB(out)] Received xact #        461
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 30990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        462
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 31010: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         463
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        464
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 31208: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        465
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31290: uvm_test_top.e0.sb0 [SB(out)] Received xact #        466
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 31390: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         467
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31430: uvm_test_top.e0.sb0 [SB(out)] Received xact #        468
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31470: uvm_test_top.e0.sb0 [SB(out)] Received xact #        469
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31590: uvm_test_top.e0.sb0 [SB(out)] Received xact #        470
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31610: uvm_test_top.e0.sb0 [SB(out)] Received xact #        471
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31690: uvm_test_top.e0.sb0 [SB(out)] Received xact #        472
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 31716: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        473
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31770: uvm_test_top.e0.sb0 [SB(out)] Received xact #        474
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 31830: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         475
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 31930: uvm_test_top.e0.sb0 [SB(out)] Received xact #        476
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 31943: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        477
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32070: uvm_test_top.e0.sb0 [SB(out)] Received xact #        478
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32150: uvm_test_top.e0.sb0 [SB(out)] Received xact #        479
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 32197: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        480
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 32302: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        481
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32390: uvm_test_top.e0.sb0 [SB(out)] Received xact #        482
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32410: uvm_test_top.e0.sb0 [SB(out)] Received xact #        483
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 32430: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         484
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32510: uvm_test_top.e0.sb0 [SB(out)] Received xact #        485
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 32610: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         486
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 32650: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         487
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32750: uvm_test_top.e0.sb0 [SB(out)] Received xact #        488
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 32751: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        489
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32810: uvm_test_top.e0.sb0 [SB(out)] Received xact #        490
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 32883: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        491
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 32910: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         492
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 32990: uvm_test_top.e0.sb0 [SB(out)] Received xact #        493
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/monitor.sv(35) @ 33010: uvm_test_top.e0.a0.m0 [MON] Reset xact        #         494
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 33050: uvm_test_top.e0.sb0 [SB(out)] Received xact #        495
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 33090: uvm_test_top.e0.sb0 [SB(out)] Received xact #        496
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(42) @ 33190: uvm_test_top.e0.sb0 [SB(out)] Received xact #        497
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 33287: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        498
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/scoreboard.sv(48) @ 33380: uvm_test_top.e0.sb0 [SB(rst)] Resetted xact #        499
+# UVM_INFO /home/user/sv_modules/adder_uvm_testbench/UVM_tb/sequence.sv(24) @ 33450: uvm_test_top.e0.a0.s0@@seq [SEQ] Done generation of 500 items
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 33450: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  505
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MON]    94
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB(out)]   319
+# [SB(rst)]    86
+# [SEQ]     2
+# [TEST_DONE]     1
+# ** Note: $finish    : /home/user/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 33450 ns  Iteration: 70  Instance: /tb_top
+# End time: 23:00:08 on Sep 02,2025, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

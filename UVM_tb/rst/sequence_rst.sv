@@ -5,7 +5,7 @@ class sequence_rst extends uvm_sequence;
   endfunction
 
   virtual task body();
-    while (1) begin
+    forever begin
       item_rst m_item = item_rst::type_id::create("m_item");
       start_item(m_item);
       void'(m_item.randomize());

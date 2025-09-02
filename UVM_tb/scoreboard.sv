@@ -14,6 +14,8 @@ class scoreboard extends uvm_scoreboard;
 
   item item_queue[$];
 
+  bit  rst_val;
+
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     m_analysis_imp_main_in = new("m_analysis_imp_main_in", this);
@@ -42,10 +44,10 @@ class scoreboard extends uvm_scoreboard;
   endfunction
 
   virtual function void write_port_rst(item_rst m_item);
-    if (item_queue.size() > 0) begin
+    if ((item_queue.size() > 0) && (m_item.arst_val == 0)) begin
       `uvm_info("SB(rst)",$sformatf("Resetted xact #%d", item_queue[0].xact_num), UVM_LOW);
-      void'(item_queue.pop_front());
-    end;
+      item_queue = {};
+    end
   endfunction
 
 endclass
